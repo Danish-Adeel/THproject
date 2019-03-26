@@ -8,8 +8,8 @@ import { auth } from "firebase/app";
   styleUrls: ["./login.page.scss"]
 })
 export class LoginPage implements OnInit {
-  username: string = "";
-  password: string = "";
+  username: string;
+  password: string;
   constructor(public afAuth: AngularFireAuth) {}
 
   ngOnInit() {}

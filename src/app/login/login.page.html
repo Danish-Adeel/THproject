@@ -1,29 +1,35 @@
 <Header>
-  <ion-toolbar>
-    <ion-text color="dark">
-      <h5>Welcome</h5>
-    </ion-text>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-text color="light">
+			<h5>Welcome</h5>
+		</ion-text>
+	</ion-toolbar>
 </Header>
 <ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-label position="floating">Username</ion-label>
-      <ion-input
-        type="text"
-        clearInput
-        value=""
-        [(ngModel)]="username"
-      ></ion-input>
-    </ion-item>
+	<div class="bg-image"></div>
+	<ion-list lines="none">
+		<ion-item>
+			<!-- <ion-label position="floating">Username</ion-label> -->
+			<ion-input
+				type="text"
+				placeholder="Username"
+				clearInput
+				value=""
+				[(ngModel)]="username"
+			></ion-input>
+		</ion-item>
 
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" [(ngModel)]="password"></ion-input>
-    </ion-item>
-  </ion-list>
+		<ion-item>
+			<!-- <ion-label position="floating">Password</ion-label> -->
+			<ion-input
+				type="password"
+				placeholder="Password"
+				[(ngModel)]="password"
+			></ion-input>
+		</ion-item>
+	</ion-list>
 
-  <ion-button fill="solid" expand="block" color="dark" (click)="login()"
-    >Login</ion-button
-  >
+	<ion-button fill="solid" expand="block" color="dark" (click)="login()"
+		>Login</ion-button
+	>
 </ion-content>
