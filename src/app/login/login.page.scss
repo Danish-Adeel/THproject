@@ -1,8 +1,3 @@
-ion-toolbar {
-	--background: transparent;
-	--ion-color-base: transparent !important;
-}
-
 .bg-image {
 	background: url('../../assets/air-balloon.jpg') no-repeat center center;
 	position: fixed;
@@ -14,11 +9,23 @@ ion-toolbar {
 
 ion-list {
 	--ion-item-background: transparent;
-	margin-top: 170px;
+	margin-top: 250px;
+
+	ion-text {
+		h5 {
+			font-weight: bold;
+			font-size: 200%;
+			margin-bottom: 50px;
+		}
+	}
+
 	ion-item {
 		background: white;
 		border-radius: 25px;
 		margin-top: 8px;
+		--highlight-color-focused: none;
+		--highlight-color-invalid: none;
+		--highlight-color-valid: none;
 	}
 }
 
