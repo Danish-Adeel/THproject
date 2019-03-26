@@ -23,6 +23,9 @@ export class LoginPage implements OnInit {
       );
     } catch (error) {
       console.dir(error);
+      if (error.code === "auth/user-not-found") {
+        console.log("user not found");
+      }
     }
   }
 }
