@@ -1,15 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
-  <ion-list>
+  <div class="bg-image"></div>
+  <ion-list lines="none">
+    <ion-text color="none" text-center>
+      <h5>Welcome</h5>
+    </ion-text>
     <ion-item>
-      <ion-label position="floating">Username</ion-label>
+      <!-- <ion-label position="floating">Username</ion-label> -->
       <ion-input
+        color="light"
         type="text"
+        placeholder="Username"
+        required="true"
         clearInput
         value=""
         [(ngModel)]="username"
@@ -17,16 +18,36 @@
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" [(ngModel)]="password"></ion-input>
+      <!-- <ion-label position="floating">Password</ion-label> -->
+      <ion-input
+        color="light"
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+        clearInput
+        value=""
+      ></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Confirm Password</ion-label>
-      <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+      <!-- <ion-label position="floating">Password</ion-label> -->
+      <ion-input
+        color="light"
+        type="password"
+        placeholder="Confirm Password"
+        [(ngModel)]="cpassword"
+        clearInput
+        value=""
+      ></ion-input>
     </ion-item>
   </ion-list>
 
-  <ion-button fill="solid" expand="block" color="dark" (click)="register()"
-    >SignUp</ion-button
+  <ion-button
+    fill="solid"
+    shape="round"
+    expand="block"
+    color="light"
+    (click)="register()"
+  >
+    <ion-ripple-effect></ion-ripple-effect> Register</ion-button
   >
 </ion-content>

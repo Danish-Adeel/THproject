@@ -1,36 +1,37 @@
 .bg-image {
-	background: url('../../assets/air-balloon.jpg') no-repeat center center;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+  background: url("../../assets/glass-raindrops.jpg") no-repeat center center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 ion-list {
-	--ion-item-background: transparent;
-	margin-top: 250px;
+  --ion-item-background: transparent;
+  margin-top: 250px;
 
-	ion-text {
-		h5 {
-			font-weight: bold;
-			font-size: 200%;
-			margin-bottom: 50px;
-		}
-	}
+  ion-text {
+    h5 {
+      font-weight: bold;
+      font-size: 200%;
+      margin-bottom: 80px;
+      color: white;
+    }
+  }
 
-	ion-item {
-		background: white;
-		border-radius: 25px;
-		margin-top: 8px;
-		--highlight-color-focused: none;
-		--highlight-color-invalid: none;
-		--highlight-color-valid: none;
-	}
+  ion-item {
+    background: transparent;
+    border-radius: 25px;
+    margin-top: 8px;
+    --highlight-color-focused: none;
+    --highlight-color-invalid: none;
+    --highlight-color-valid: none;
+  }
 }
 
 page-login {
-	.no-scroll .scroll-content {
-		overflow: hidden;
-	}
+  .no-scroll .scroll-content {
+    overflow: hidden;
+  }
 }
